@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arvindh Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">My Projects</a></li>
+                <li><a href="#social-media">Social Media</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-content">
+                <img src="my coat image.jpg" alt="Your Image" class="profile-image">
+                <div class="about-text">
+                    <h2>Hello, I am Arvindh</h2>
+                    <p>To leverage my skills as a distinguished graduate and dedicated UI/UX designer. With a strong work ethic and expertise in crafting intuitive digital experiences, I aim to contribute to organizational growth through innovative and usercentric design solutions</p>
+                    <div class="btn-container">
+                        <a href="my resume.pdf" download="Your_CV" class="btn-download">Download Resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-grid">
+                <div class="education-box">
+                    <h3>B.E. in ECE</h3>
+                    <p>Sethu Institute of Technology</p>
+                    <p>7.6 CGPA up to 6th Sem</p>
+                </div>
+                <div class="education-box">
+                    <h3>HSC</h3>
+                    <p>St. Britto Higher Secondary School, Madurai</p>
+                    <p>82%</p>
+                </div>
+                <div class="education-box">
+                    <h3>SSLC</h3>
+                    <p>St. Britto Matriculation School, Madurai</p>
+                    <p>79%</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project" onclick="openProject('https://www.figma.com/proto/QSZuMneDqZt8uWybaekKAh/Puma?node-id=2-3')">
+                    <h3>Project 1</h3>
+                    <p>Click to view details</p>
+                </div>
+                <div class="project" onclick="openProject('https://www.figma.com/proto/9Vodu06rfHuXHIEi4O728N/coco-cola?node-id=1-2&node-type=canvas&t=YIdD0ifyDWuvKlUS-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2')">
+                    <h3>Project 2</h3>
+                    <p>Click to view details</p>
+                </div>
+                <div class="project" onclick="openProject('https://www.figma.com/proto/tNp8K3b47rS2jUzqGmNukd/Mercedes-benz?t=M5WiPxGUPMEwxQg7-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=31-511')">
+                    <h3>Project 3</h3>
+                    <p>Click to view details</p>
+                </div>
+                <div class="project" onclick="openProject('https://www.figma.com/proto/AHldHlYqHy7B9ZimA8elkT/FRAME-WEB?t=AtatkAPZ1SZk4feD-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=49-152')">
+                    <h3>Project 4</h3>
+                    <p>Click to view details</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section id="social-media" class="section">
+        <div class="container">
+            <h2>Follow Me</h2>
+            <ul class="social-links">
+                <li><a href="https://x.com/dir_arvindh?t=FOWUQdrXmjZbn-B8xneiFA&s=09" target="_blank">Twitter</a></li>
+                <li><a href="https://www.linkedin.com/in/arvindh-n-33715430b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/thalapathyarvindh?igsh=OTZ5MjQyaGFmZWdt" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Arvindh. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function openProject(link) {
+            window.open(link, '_blank');
+        }
+
+        // Scroll animation
+        const sections = document.querySelectorAll('.section');
+        window.addEventListener('scroll', function () {
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                if (sectionTop < windowHeight - 100) {
+                    section.classList.add('visible');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
